@@ -1,0 +1,39 @@
+.logo_wrapper {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.company_info {
+  font-family: SourceHanSansK-Regular;
+  font-size: 0.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(112, 112, 112);
+  margin-right: 2rem;
+}
+
+.footer_options {
+  display: flex;
+  -webkit-box-align: start;
+  align-items: start;
+  justify-content: right;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1216px;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  background-color: rgb(26, 21, 21);
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+}

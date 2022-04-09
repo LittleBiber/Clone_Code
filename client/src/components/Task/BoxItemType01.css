@@ -1,0 +1,55 @@
+.boxitemtype01 {
+  width: 100%;
+  height: 100%;
+  max-width: 904px;
+  max-height: 93px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  padding: 33px 60px;
+  gap: 66px;
+}
+
+.box_title {
+  width: 100%;
+  max-width: 80px;
+  font-family: SourceHanSansK-Bold;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: -0.18px;
+  text-align: left;
+  color: rgb(101, 145, 218);
+  white-space: pre-line;
+}
+
+.box_desc {
+  font-family: SourceHanSansK-Medium;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: -0.66px;
+  text-align: left;
+  color: rgb(30, 30, 30);
+  white-space: normal;
+}
+
+.box_sub_desc {
+  font-family: SourceHanSansK-Normal;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.54px;
+  text-align: left;
+  color: rgb(153, 153, 153);
+}

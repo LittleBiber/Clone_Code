@@ -1,0 +1,14 @@
+.footer_menu {
+  min-width: 12rem;
+}
+
+.footer_title {
+  color: #707070;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer_option {
+  margin-bottom: 1rem;
+  color: white;
+}
