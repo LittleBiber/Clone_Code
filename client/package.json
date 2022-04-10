@@ -6,13 +6,10 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.26.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-redux": "^7.2.8",
-    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "redux": "^4.1.2",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -56,14 +53,12 @@
     "@storybook/addon-essentials": "^6.4.21",
     "@storybook/addon-interactions": "^6.4.21",
     "@storybook/addon-links": "^6.4.21",
-    "@storybook/addon-storyshots": "^6.4.21",
     "@storybook/builder-webpack5": "^6.4.21",
     "@storybook/manager-webpack5": "^6.4.21",
     "@storybook/node-logger": "^6.4.21",
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.21",
     "@storybook/testing-library": "^0.0.9",
-    "react-test-renderer": "^18.0.0",
     "webpack": "^5.72.0"
   }
 }

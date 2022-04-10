@@ -1,17 +1,38 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Header.css";
+import styled from "styled-components";
 
-import { Button } from "../Button";
-import { DropdownMenu } from "../DropdownMenu";
+import { Button } from "./Button";
+import { DropdownMenu } from "./DropdownMenu";
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: 70px;
+  max-width: 1216px;
+  padding: 0px 20px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+`;
+
+const Logo = styled.img`
+  width: 7rem;
+`;
+
+const MenuList = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 export const Header = () => {
   return (
-    <div className="header">
+    <HeaderWrapper>
       <div className="logo_wrapper">
-        <img src="logo.png" alt="logo" className="logo" />
+        <Logo src="logo.png" alt="logo" className="logo" />
       </div>
-      <div className="menu_list">
+      <MenuList>
         <DropdownMenu
           title="서비스 소개"
           options={[
@@ -27,12 +48,12 @@ export const Header = () => {
         />
         <DropdownMenu title="요금 안내" />
         <DropdownMenu title="비대면 바우처" />
-      </div>
+      </MenuList>
       <div className="auth">
-        <Button primary={true} label="로그인" />
-        <Button primary={false} label="회원가입" />
+        <Button type={true} />
+        <Button type={false} />
       </div>
-    </div>
+    </HeaderWrapper>
   );
 };
 
