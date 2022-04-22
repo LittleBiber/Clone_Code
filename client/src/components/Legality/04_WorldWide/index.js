@@ -1,46 +1,72 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Main = styled.div`
   width: 100%;
-  height: auto;
+  max-width: 1200px;
+  min-height: 550px;
   display: flex;
   flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex: 1.5 1 0%;
-  background-color: white;
-  padding-top: 2rem;
+  justify-content: space-between;
   text-align: right;
+  padding: 130px 40px 180px;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `
 
 const Title = styled.div`
   font-family: SourceHanSansK-Bold;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 36px;
   line-height: 1.3;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
+
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
 `
 
 const Description = styled.p`
-  font-family: SourceHanSansK-Normal;
+  font-size: 18px;
   line-height: 1.3;
-  margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
 `
 
 const OutLink = styled.span`
-  font-family: SourceHanSansK-Normal;
+  font-size: 18px;
   line-height: 1.3;
-  margin-bottom: 1.2rem;
   color: #713838;
   font-weight: 500;
   cursor: pointer;
+
+  span {
+    margin-right: 4px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
 `
 
 const Img = styled.img`
   width: 600px;
+
+  @media (max-width: 991px) {
+    width: 90%;
+  }
 `
 
 export const WorldWide = () => {
@@ -65,7 +91,10 @@ export const WorldWide = () => {
             <br />
             인정하고 있습니다.
           </Description>
-          <OutLink>해외 전자계약 법률 확인하기</OutLink>
+          <OutLink>
+            <span>해외 전자계약 법률 확인하기</span>
+            <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+          </OutLink>
         </div>
       </div>
       <Img src="worldwide.png" alt="worldwide" />
